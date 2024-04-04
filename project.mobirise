@@ -86,7 +86,8 @@
     "publishChangesOnly": true,
     "chatbutton": {},
     "mbrsiteDomain": "oeom9arnsv",
-    "usedWebp": false
+    "usedWebp": false,
+    "publishEditFolder": true
   },
   "pages": {
     "index.html": {
