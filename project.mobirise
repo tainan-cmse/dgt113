@@ -16,10 +16,10 @@
         "display1Size": 4.2,
         "display2Font": "Gentium Book Basic",
         "display2Size": 3.2,
-        "display5Font": "Gentium Basic",
+        "display5Font": "Open Sans",
         "display5Size": "1.4",
-        "display7Font": "PT Serif",
-        "display7Size": 1.2,
+        "display7Font": "Open Sans",
+        "display7Size": "1",
         "display4Font": "Open Sans",
         "display4Size": "0.8",
         "isRoundedButtons": false,
@@ -69,7 +69,7 @@
       }
     ],
     "imageResize": false,
-    "favicon": "@PROJECT_PATH@/assets/images/2path2020logo-03-128x38.png",
+    "favicon": "@PROJECT_PATH@/assets/images/noun-mountain-6549436.svg",
     "cssOptimize": false,
     "lazyLoad": false,
     "lazyType": "nothing",
@@ -80,12 +80,12 @@
     "cookiesAlert": false,
     "gdpr": false,
     "pwa-switcher": false,
-    "uniqCompNum": 218,
-    "versionPublish": "5.8.0",
+    "uniqCompNum": 224,
+    "versionPublish": "5.8.17",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
     "chatbutton": {},
-    "mbrsiteDomain": "d1iofz4dov",
+    "mbrsiteDomain": "oeom9arnsv",
     "usedWebp": false
   },
   "pages": {
@@ -137,535 +137,10 @@
             }
           },
           "_name": "header01",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"15\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"15\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/2024web.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#3d626c\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f6c2c0\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-left\">\n        <div class=\"row\">\n            <div class=\"mbr-white col-md-7\">\n                <h1 class=\"mbr-section-title mbr-semibold pb-2 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    Create Your Portfolio</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar efficitur risus. Nulla\n                    elementum suscipit odio</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">READ MORE</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"15\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"15\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/2024web-1--1.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#3d626c\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f6c2c0\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-left\">\n        <div class=\"row\">\n            <div class=\"mbr-white col-md-7\">\n                <h1 class=\"mbr-section-title mbr-semibold pb-2 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    Create Your Portfolio</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar efficitur risus. Nulla\n                    elementum suscipit odio</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">READ MORE</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
           "_cid": "rZt6PEs1bg",
           "_anchor": "header01-3e",
           "_sourceTheme": "personam4",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".card-box": {
-              "padding": "0rem"
-            },
-            ".mbr-section-btn": {
-              "margin-top": "1.8rem"
-            },
-            "h4": {
-              "margin-bottom": "0",
-              "padding-top": "0rem",
-              "& when not (@showSubTitle)": {
-                "padding-top": "2rem"
-              }
-            },
-            "h5": {
-              "margin-bottom": "0",
-              "padding-top": "2rem"
-            },
-            "p": {
-              "margin-bottom": "0",
-              "padding-top": "1.2rem",
-              "& when not (@showTitle)": {
-                "& when not (@showSubTitle)": {
-                  "padding-top": "2rem"
-                }
-              }
-            },
-            ".card-wrapper": {
-              "height": "100%",
-              "padding-bottom": "1rem",
-              "& when not (@showTitle)": {
-                "& when not (@showSubTitle)": {
-                  "& when not (@showText)": {
-                    "& when not (@showButtons)": {
-                      "padding-bottom": "0"
-                    }
-                  }
-                }
-              }
-            },
-            ".mbr-text": {
-              "color": "#879a9f"
-            },
-            ".card-img": {
-              "height": "400px",
-              "position": "relative",
-              "img": {
-                "height": "100%",
-                "object-fit": "cover",
-                "z-index": "2",
-                "position": "relative"
-              },
-              "&:after": {
-                "content": "''",
-                "position": "absolute",
-                "border-radius": "100%",
-                "z-index": "1",
-                "bottom": "5px",
-                "left": "50%",
-                "right": "50%",
-                "transform": "translate(-50%, -50%)",
-                "width": "70%",
-                "height": "40px",
-                "box-shadow": "0 35px 30px 0 rgba(0, 0, 0, 0.35)"
-              }
-            },
-            ".card-subtitle": {
-              "color": "#9c969b"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#232323"
-            },
-            ".card-title": {
-              "color": "#232323"
-            }
-          },
-          "_name": "features05",
-          "_customHTML": "<section class=\"features5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show SubTitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/event-1-696x977.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h5 class=\"card-subtitle align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\" data-app-selector=\".card-subtitle\"><div><span style=\"color: inherit; font-size: 0.8rem; background-color: transparent;\">工作坊</span><br></div></h5>\n                        <h4 class=\"card-title align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>家刺繡：縫ㄧ幅圖景工作坊</b><div><b>入門篇、進步篇</b></div></h4>\n                        <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>陳德聚堂</b><br><b>6月6 (六)-6月7 (日) &nbsp;/ / 14:00 pm – 17:00 pm</b><br><br>由府城刺繡宗師，人稱「阿泉師」的林玉泉所帶領的兩堂工坊，從刺繡的基本知識到完成一幅作品。<br><br>「光彩繡庄」位於台南市區永福路上，鄰近台南市的第一條街「民權路」，民權路聚集了眾多販賣紡織布綢的生意店家。藉由縫製人間符碼更甚於縫製給神仙的圖騰，一針一線的在眾神之都台南，堆疊出厚實的經驗。「縫製」象徵一種家常，除了加強在地串連力道，更讓「縫製」與「家」的含意更為融合。連續兩天的工坊課程，除了刺繡之外，更連結吳萬春香鋪的製香課，藉由兩種不同產業的碰撞，能帶給你怎樣的火花呢？<br><br></p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"page1.html\" class=\"btn btn-primary-outline\" data-app-placeholder=\"Type Text\">更多介紹</a></div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/event-1-3-696x882.png\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h5 class=\"card-subtitle align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\" data-app-selector=\".card-subtitle\"><div><span style=\"color: inherit; font-size: 0.8rem; background-color: transparent;\">講談</span><br></div></h5>\n                        <h4 class=\"card-title align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <div><b>這是咱台南的模樣 part.1 - .2</b></div>\n                        </h4>\n                        <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>陳德聚堂<br>6月13 (六)、6月19 (五)  / / 19:30 pm – 21:30 pm</b><br><br>從荷治開始，逐步訴說城街的發展，進而談論台南現在及未來的樣貌。兩回合的講談，邀請研究者、觀察者一同分享、討論，試圖構築不同台南的生活觀點。<b><br></b></p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"page2.html#image01-1i\" class=\"btn btn-primary-outline\" data-app-placeholder=\"Type Text\">\n                            更多介紹</a></div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/2-696x984.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h5 class=\"card-subtitle align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\" data-app-selector=\".card-subtitle\"><div><span style=\"color: inherit; font-size: 0.8rem; background-color: transparent;\">工作坊</span><br></div></h5>\n                        <h4 class=\"card-title align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>家香味：是哪味？</b><br><b>做一株家的香氣</b></h4>\n                        <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>陳德聚堂<br>6月25(四) / / 14:00 pm – 16:00 pm</b><br><br>由老字號百年香鋪「府城歷史之窗.吳萬春香鋪」，帶領的手捏製香工坊。<br>「香」是家廟祭祀時的必須之物，藉由「香」解析儀式與人之間的連結。除了從理解香材開始，到香的製作與使用，更透過家廟的故事增添其社會意義。<b><br></b><br></p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"page3.html#image01-1u\" class=\"btn btn-primary-outline\" data-app-placeholder=\"Type Text\">\n                            更多介紹</a></div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-lg-3\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/img/04.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h5 class=\"card-subtitle align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\" data-app-selector=\".card-subtitle\">Projects</h5>\n                        <h4 class=\"card-title align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Our Works</h4>\n                        <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod temporeum dicant partem\n                            scripserit.\n                        </p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"https://mobirise.co\" class=\"btn btn-primary-outline\" data-app-placeholder=\"Type Text\">\n                            READ MORE</a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rYw4vmNXGI",
-          "_anchor": "features05-z",
-          "_sourceTheme": "personam4",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".mbr-text": {
-              "color": "#9c969b"
-            },
-            "@media (min-width: 992px)": {
-              "img": {
-                "width": "90%"
-              }
-            },
-            ".social-list": {
-              "display": "flex",
-              "flex-wrap": "wrap"
-            },
-            ".soc-item": {
-              "width": "20px",
-              "height": "20px",
-              "display": "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              "margin": "0.25rem 0.3rem",
-              "span": {
-                "font-size": "1rem",
-                "color": "@iconsColor !important",
-                "transition": "all 0.3s"
-              },
-              "&:hover": {
-                "span": {
-                  "color": "@primaryColor !important"
-                }
-              }
-            },
-            ".items-col": {
-              "line-height": "2.5",
-              "margin": "0"
-            },
-            "@media (max-width: 992px)": {
-              ".card-img": {
-                "margin-bottom": "2rem"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".social-list": {
-                "justify-content": "center"
-              }
-            },
-            ".card-title": {
-              "color": "#767676"
-            },
-            ".items": {
-              "color": "#767676"
-            }
-          },
-          "_name": "content05",
-          "_customHTML": "<section class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#232323\">\n        <input inline type=\"range\" title=\"Icons\" name=\"iconsCount\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#f6f6f6\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-8\">\n                <div class=\"card-img\">\n                    <img src=\"@PROJECT_PATH@/assets/images/40-1314x985.png\" alt=\"Mobirise\" title>\n                </div>\n\n            </div>\n\n            <div class=\"col-lg-4\">\n\n                <h4 class=\"card-title mbr-semibold pb-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><br><br>未來的家</h4>\n\n                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">溢出去，跨過去。<br>一人創生的夢幻。<br>面對未來的質變，就是從質變到量變。<br>人事物將提昇，不只是凝固的蛋黃。<br>未來的他方與地方。<br>從家的地方到地理關連性。<br>沃土與養分、社區居民的泛指與寬鬆看待。</p>\n\n\n                <p class=\"items items-col align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".items\"><b>標籤:</b>&nbsp; 家、公共、地方、質變<br><b>型態:</b>&nbsp; 概念<br><b>日期:\n                    </b>&nbsp;0613.2020<br></p>\n\n\n                <div class=\"social-list pt-2 align-left\" mbr-if=\"iconsCount > 0\">\n\n                    <p class=\"items align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".items\"><b>\n                            SHARE:&nbsp;</b></p>\n\n\n                    <div class=\"soc-item\" mbr-if=\"iconsCount>0\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-facebook socicon\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n                        <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-youtube socicon\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-vkontakte socicon\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n                        <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-googleplus socicon\"></span>\n                        </a>\n                    </div>\n\n                    <div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n                        <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-skype socicon\"></span>\n                        </a>\n                    </div>\n\n                    <div class=\"soc-item\" mbr-if=\"iconsCount>6\">\n                        <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-googleplus socicon\"></span>\n                        </a>\n                    </div>\n\n                    <div class=\"soc-item\" mbr-if=\"iconsCount>7\">\n                        <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-googleplus socicon\"></span>\n                        </a>\n                    </div>\n\n                </div>\n\n\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s2cCVI6Wi9",
-          "_anchor": "content05-3s",
-          "_sourceTheme": "personam4",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_name": "slider3",
-          "_styles": {
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".carousel-item": {
-              "-webkit-justify-content": "center",
-              "justify-content": "center",
-              "& > div": {
-                "width": "100%"
-              }
-            },
-            "h4": {
-              "margin-top": "1rem",
-              "margin-bottom": "1.3rem",
-              "font-weight": "900"
-            },
-            ".mbr-iconfont": {
-              "font-size": "1.5rem",
-              "color": "#fff",
-              "opacity": "0",
-              "transition": "0.7s"
-            },
-            ".carousel-item.active, .carousel-item-next, .carousel-item-prev": {
-              "display": "flex"
-            },
-            ".carousel-controls": {
-              "a": {
-                "transition": "opacity .5s",
-                "font-size": "1.2rem",
-                "span": {
-                  "padding": "15px",
-                  "border-radius": "50%",
-                  "opacity": ".9"
-                },
-                "&:hover": {
-                  "span": {
-                    "opacity": "1"
-                  }
-                }
-              }
-            },
-            "@media (min-width: 768px)": {
-              ".carousel-controls": {
-                "a": {
-                  "width": "5%"
-                }
-              }
-            },
-            ".mbr-section-subtitle": {
-              "margin-top": "2rem",
-              "margin-bottom": "1rem",
-              "color": "#70747f"
-            },
-            ".mbr-text": {
-              "position": "relative",
-              "color": "#767676"
-            },
-            "li": {
-              "background-color": "transparent",
-              "width": "11px",
-              "height": "11px",
-              "border": "1px solid #e0e0e0 !important",
-              "margin-left": "0.4rem",
-              "margin-right": "0.4rem"
-            },
-            "li.active": {
-              "background-color": "@ColorCircle",
-              "width": "14px",
-              "height": "14px",
-              "border": "none !important"
-            },
-            ".carousel-indicators": {
-              "position": "absolute",
-              "margin-top": "2rem",
-              "bottom": "0rem",
-              "align-items": "center"
-            },
-            "ol": {
-              "margin-bottom": "0"
-            },
-            ".carousel-indicators li": {
-              "border": "none",
-              "border-radius": "50%"
-            },
-            ".carousel": {
-              "display": "flex",
-              "overflow": "hidden",
-              "padding-bottom": "4rem"
-            },
-            "@media (max-width: 767px)": {
-              "padding-top": "(@paddingTop * 10px)",
-              "padding-bottom": "(@paddingBottom * 10px)",
-              ".col-md-3": {
-                "padding": "0"
-              },
-              ".img-card": {
-                "padding": "0"
-              },
-              ".title-block": {
-                "margin": "2rem 1rem",
-                "z-index": "2"
-              },
-              ".mbr-iconfont": {
-                "opacity": "1"
-              },
-              ".wrapper-img": {
-                "z-index": "1"
-              },
-              ".signature": {
-                "color": "#ffffff"
-              },
-              ".desk": {
-                "color": "#ffffff"
-              },
-              ".mbr-text": {
-                "color": "#ffffff"
-              },
-              ".date": {
-                "color": "#ffffff"
-              }
-            },
-            "@media (min-width: 767px)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)",
-              ".title-block": {
-                "margin": "2.5rem 3rem 2rem 2.5rem"
-              },
-              ".wrapper-img": {
-                "z-index": "-1"
-              },
-              ".desk": {
-                "color": "#e9204f"
-              },
-              ".signature": {
-                "color": "#101010"
-              },
-              ".img-block:hover": {
-                "img": {
-                  "transform": "scale(1.05)"
-                },
-                ".mbr-iconfont": {
-                  "opacity": "1"
-                },
-                ".wrapper-img": {
-                  "z-index": "1"
-                },
-                ".title-block": {
-                  "z-index": "2"
-                },
-                ".signature": {
-                  "color": "#ffffff"
-                },
-                ".desk": {
-                  "color": "#ffffff"
-                },
-                ".mbr-text": {
-                  "color": "#ffffff"
-                },
-                ".date": {
-                  "color": "#ffffff"
-                },
-                "&::after": {
-                  "opacity": "0"
-                }
-              }
-            },
-            ".title-block": {
-              "position": "relative",
-              "z-index": "10"
-            },
-            ".desk": {
-              "font-weight": "700",
-              "color": "#dab710"
-            },
-            ".img-block": {
-              "display": "flex",
-              "flex-direction": "column",
-              "justify-content": "center",
-              "position": "relative",
-              "transition": "0.3s"
-            },
-            ".img-block::after": {
-              "content": "\"\"",
-              "position": "absolute",
-              "left": "0",
-              "transition": "0.3s",
-              "right": "0",
-              "top": "0",
-              "bottom": "0",
-              "background-color": "@cardBg",
-              "opacity": "1",
-              "z-index": "0"
-            },
-            ".date": {
-              "margin-top": "3.5rem",
-              "color": "#9c969b"
-            },
-            ".wrapper-img": {
-              "position": "absolute",
-              "background-color": "#000000",
-              "transition": "cubic-bezier(0.17, 0.67, 0, 1.01)",
-              "overflow": "hidden",
-              "width": "100%",
-              "height": "100%"
-            },
-            "img": {
-              "transition": "0.7s",
-              "opacity": "0.3",
-              "position": "absolute",
-              "left": "0",
-              "width": "100%",
-              "height": "100%",
-              "object-fit": "cover"
-            },
-            "@media (max-width: 992px)": {
-              ".img-card": {
-                "margin-top": "2rem"
-              }
-            },
-            ".container-fluid, .mbr-section-title": {
-              "color": "#232323"
-            },
-            " .signature": {
-              "text-align": "left"
-            }
-          },
-          "_customHTML": "<section class=\"carousel slide testimonials-slider extTestimonials\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-testimonials-slider\" data-interval=\"false\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" inline>\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" inline>\n        <!-- <input type=\"range\" inline title=\"Count Items\" name=\"testimonialsSlides\" min=\"1\" max=\"20\" step=\"1\" value=\"2\"> -->\n        <header>Additional</header>\n        <select name=\"columns\" title=\"Columns in Item\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <select name=\"cardsAmount\" title=\"Cards Amount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n        </select>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"showAutoplay\">\n        <input type=\"range\" inline title=\"Autoplay Interval (ms)\" name=\"interval\" min=\"1000\" max=\"8000\" step=\"1000\" value=\"5000\" condition=\"showAutoplay\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Date\" name=\"showDate\" checked>\n        <input type=\"checkbox\" title=\"Author Name\" name=\"showName\" checked>\n        <input type=\"checkbox\" title=\"Author Title\" name=\"showDesk\" checked>\n        <!-- <input type=\"color\" title=\"Item Background\" name=\"itemBg\" value=\"#ffffff\"> -->\n        <header>Color</header>\n        <input type=\"color\" title=\"Color Circle\" name=\"ColorCircle\" value=\"#232323\">\n        <input type=\"color\" title=\"Card Background\" name=\"cardBg\" value=\"#f6f6f6\">\n        <!-- <header>Background Cards</header>\n        <input type=\"image\" name=\"card1bg\" title=\"Card 1 Bg\" value=\"../_images/people/people-1.jpg\"\n            condition=\"columns > 0\">\n        <input type=\"image\" name=\"card2bg\" title=\"Card 2 Bg\" value=\"../_images/people/people-2.jpg\"\n            condition=\"columns > 1\">\n        <input type=\"image\" name=\"card3bg\" title=\"Card 3 Bg\" value=\"../_images/people/people-3.jpg\"\n            condition=\"columns > 2\">\n        <input type=\"image\" name=\"card4bg\" title=\"Card 4 Bg\" value=\"../_images/people/people-4.jpg\"\n            condition=\"columns > 3\"> -->\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <h2 class=\"mbr-fonts-style mbr-section-title line-bg-warning\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".container-fluid, .mbr-section-title\">\n            They Say\n        </h2>\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius alias corporis voluptas dolor? <br> Cum quisquam quasi veritatis temporibus ipsum ab.</h3>\n        <div class=\"carousel slide\" role=\"listbox\" data-pause=\"true\" data-keyboard=\"false\" data-ride=\"{{showAutoplay ? 'carousel' : 'false'}}\" data-interval=\"{{showAutoplay ? interval : 'false'}}\" mbr-class=\"{'pt-4':showTitle || showSubtitle}\">\n            \n            <!-- <div mbr-list mbr-list-grow=\"testimonialsSlides\" class=\"carousel-inner\"> -->\n                <ol class=\"carousel-indicators\">\n                    <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" mbr-if=\"cardsAmount > 0\" class=\"active\"></li>\n                    <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\" mbr-if=\"cardsAmount > 1\"></li>\n                   \n                  </ol>\n                <div class=\"carousel-item\">\n                    <div class=\"row justify-content-center\">\n                        <div class=\"col-md-6 img-card\" mbr-class=\"{\n                        'col-lg-3': columns == '4',\n                        'col-lg-4': columns == '3',\n                        'col-lg-6': columns == '2',\n                        'col-lg-6': columns == '1'}\">                          \n                            <div class=\"img-block\">\n                              <div class=\"wrapper-img\">\n                                <img src=\"@PROJECT_PATH@/assets/images/4-506x355.jpeg\" alt title>\n                              </div>\n                              <div class=\"title-block align-left\">\n                                <h5 class=\"desk mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-4\" mbr-if=\"showDesk\" data-app-selector=\".desk\">01 人物與事蹟</h5>\n                                <h4 class=\"mbr-fonts-style signature mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\".signature\">家廟的靈魂人物圖鑑-說說過去那些人的那些事。</h4>       \n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">人物圖鑑'圖解與比較<br><br></p>    \n                                <h5 class=\"date mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDate\" data-app-selector=\".date\">07月01日, 2020</h5>        \n                              </div>\n                            </div>\n                        </div>\n                        <div class=\"col-md-6 img-card\" mbr-if=\"columns>1\" mbr-class=\"{\n                          'col-lg-3': columns == '4',\n                          'col-lg-4': columns == '3',\n                          'col-lg-6': columns == '2',\n                          'col-lg-6': columns == '1'}\">\n                            <div class=\"img-block\">\n                              <div class=\"wrapper-img\">\n                                  <img src=\"@PROJECT_PATH@/assets/images/3-506x345.jpeg\" alt title>\n                              </div>\n                              <div class=\"title-block align-left\">\n                                <h5 class=\"desk mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDesk\" data-app-selector=\".desk\">02 圖案與符號</h5>\n                                <h4 class=\"mbr-fonts-style signature mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\" .signature\">家廟裡的圖騰-畫在牆上故事,向人們訴說著什麼。</h4>                   \n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">圖騰轉譯‘重譯圖像<br>傳統的未來感</p>\n                                <h5 class=\"date mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDate\" data-app-selector=\".date\">06月23日, 2020</h5> \n                              </div>\n                            </div>           \n                        </div>\n                        <div class=\"col-md-6 img-card\" mbr-if=\"columns>2\" mbr-class=\"{\n                          'col-lg-3': columns == '4',\n                          'col-lg-4': columns == '3',\n                          'col-lg-6': columns == '2',\n                          'col-lg-6': columns == '1'}\">\n                            <div class=\"img-block\">\n                                <div class=\"wrapper-img\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/5-425x320.jpeg\" alt title>\n                                </div>\n                                <div class=\"title-block align-left\">\n                                  <h5 class=\"desk mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDesk\" data-app-selector=\".desk\">03儀式與器物</h5>\n                                  <h4 class=\"mbr-fonts-style signature mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\" .signature\">祭典的意義-圖說儀式與解析器物。<br><br></h4>\n                                  <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">以季節來執行、祭文的現代感，以陳德聚堂為例<br></p>\n                                  <h5 class=\"date mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDate\" data-app-selector=\".date\">03月01日, 2020</h5> \n                                </div>\n                            </div>                    \n                        </div>\n                        <div class=\"col-md-6 img-card\" mbr-if=\"columns>3\" mbr-class=\"{\n                          'col-lg-3': columns == '4',\n                          'col-lg-4': columns == '3',\n                          'col-lg-6': columns == '2',\n                          'col-lg-6': columns == '1'}\">\n                            <div class=\"img-block\">\n                                <div class=\"wrapper-img\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/2-506x336.jpg\" alt title>\n                                </div>\n                                <div class=\"title-block align-left\">\n                                  <h5 class=\"desk mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDesk\" data-app-selector=\".desk\">04空間與時間</h5>\n                                  <h4 class=\"mbr-fonts-style signature mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\" .signature\">家廟空間的歷代使用，關乎時代的氛圍?</h4>                   \n                                  <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">空間使用的改變<br>與人情連結方法的進化</p>\n                                  <h5 class=\"date mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDate\" data-app-selector=\".date\">04月13日, 2020</h5> \n                                </div>\n                            </div>                    \n                        </div>\n                    </div>\n                </div>\n            <div class=\"carousel-item\">\n                    <div class=\"row justify-content-center\">\n                        <div class=\"col-md-6 img-card\" mbr-class=\"{\n                          'col-lg-3': columns == '4',\n                          'col-lg-4': columns == '3',\n                          'col-lg-6': columns == '2',\n                          'col-lg-6': columns == '1'}\">\n                          \n                          <div class=\"img-block\">\n                              <div class=\"wrapper-img\">\n                                  <img src=\"false\">\n                              </div>\n                              <div class=\"title-block align-left\">\n                                <h5 class=\"desk mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDesk\" data-app-selector=\".desk\">神祕專題</h5>\n                                <h4 class=\"mbr-fonts-style signature mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\".signature\">1</h4>\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">飲用一碗家廟精神的心靈雞湯</p>\n                                <h5 class=\"date mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDate\" data-app-selector=\".date\">近期發表</h5>         \n                              </div>\n                          </div>            \n                        </div>\n                        <div class=\"col-md-6 img-card\" mbr-if=\"columns>1\" mbr-class=\"{\n                          'col-lg-3': columns == '4',\n                          'col-lg-4': columns == '3',\n                          'col-lg-6': columns == '2',\n                          'col-lg-6': columns == '1'}\">\n                            <div class=\"img-block\">\n                                <div class=\"wrapper-img\">\n                                    <img src=\"false\">\n                                </div>\n                                <div class=\"title-block align-left\">\n                                  <h5 class=\"desk mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDesk\" data-app-selector=\".desk\">再見傳統</h5>\n                                  <h4 class=\"mbr-fonts-style signature mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\" .signature\">2</h4>                   \n                                  <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">不正統的家廟史</p>\n                                  <h5 class=\"date mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDate\" data-app-selector=\".date\">近期發表</h5>   \n                                </div>\n                            </div>                    \n                        </div>\n                        <div class=\"col-md-6 img-card\" mbr-if=\"columns>2\" mbr-class=\"{\n                          'col-lg-3': columns == '4',\n                          'col-lg-4': columns == '3',\n                          'col-lg-6': columns == '2',\n                          'col-lg-6': columns == '1'}\">\n                          <div class=\"img-block\">\n                              <div class=\"wrapper-img\">\n                                  <img src=\"false\">\n                              </div>\n                              <div class=\"title-block align-left\">\n                                <h5 class=\"desk mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDesk\" data-app-selector=\".desk\">都是自己人</h5>\n                                <h4 class=\"mbr-fonts-style signature mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\" .signature\">3</h4>                   \n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">世界一家親</p>\n                                <h5 class=\"date mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDate\" data-app-selector=\".date\">近期發表</h5>   \n                              </div>\n                          </div>            \n                        </div>\n                        <div class=\"col-md-6 img-card\" mbr-if=\"columns>3\" mbr-class=\"{\n                          'col-lg-3': columns == '4',\n                          'col-lg-4': columns == '3',\n                          'col-lg-6': columns == '2',\n                          'col-lg-6': columns == '1'}\">\n                          <div class=\"img-block\">\n                            <div class=\"wrapper-img\">\n                                <img src=\"false\">\n                            </div>\n                            <div class=\"title-block align-left\">\n                              <h5 class=\"desk mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDesk\" data-app-selector=\".desk\">場所不變</h5>\n                              <h4 class=\"mbr-fonts-style signature mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\" .signature\">&nbsp;4</h4><p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">永遠的家</p>\n                              <h5 class=\"date mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDate\" data-app-selector=\".date\">近期發表</h5>         \n                            </div>\n                          </div>            \n                        </div>\n                    </div>\n                </div>\n              </div>\n            <!-- <div class=\"carousel-controls\">\n              <a class=\"carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n                <span aria-hidden=\"true\" class=\"mbri-left mbr-iconfont\"></span>\n                <span class=\"sr-only\">Previous</span>\n              </a>\n              <a class=\"carousel-control-next\" role=\"button\" data-slide=\"next\">\n                <span aria-hidden=\"true\" class=\"mbri-right mbr-iconfont\"></span>\n                <span class=\"sr-only\">Next</span>\n              </a>\n            </div> -->\n        </div>\n    <!-- </div> -->\n    \n</section>",
-          "_anchor": "slider3-3v",
-          "_isUserblock": true,
-          "_sourceTheme": "studiom4",
-          "_cid": "s2xfllhKLl",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_name": "tabs2",
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".title__wrap": {
-              "margin-bottom": "30px"
-            },
-            ".title__block": {
-              "margin-bottom": "10px"
-            },
-            ".mbr-section-title": {
-              "margin-bottom": "0",
-              "color": "#7af790"
-            },
-            ".mbr-section-subtitle": {
-              "opacity": ".8",
-              "margin-bottom": "15px"
-            },
-            ".buttons": {
-              "display": "flex",
-              "align-items": "flex-end",
-              "justify-content": "flex-end"
-            },
-            ".mbr-section-btn .btn-secondary-outline": {
-              "padding": "3px 0",
-              "color": "#17161a !important",
-              "margin-bottom": "10px",
-              "border": "none !important",
-              "background-color": "transparent !important",
-              "&:hover": {
-                "color": "@primaryColor !important"
-              }
-            },
-            ".wrap": {
-              "margin": "0",
-              "padding": "25px 0",
-              "border-top": "1px solid fade(@borderColor, 40)",
-              "&:last-child": {
-                "border-bottom": "1px solid fade(@borderColor, 40)"
-              }
-            },
-            ".plpr_0": {
-              "padding-left": "0",
-              "padding-right": "0"
-            },
-            ".nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-link.active:focus": {
-              "outline": "none"
-            },
-            ".nav-tabs": {
-              "flex-wrap": "wrap",
-              "border-bottom": "none",
-              "margin-bottom": "30px",
-              "@media (max-width: 575px)": {
-                "flex-direction": "column",
-                "align-items": "flex-start"
-              }
-            },
-            ".nav-tabs .nav-link": {
-              "color": "@tabsColor",
-              "font-style": "normal",
-              "font-weight": "700",
-              "border": "none",
-              "border-bottom": "2px solid transparent",
-              "transition": "all cubic-bezier(0.4, 0, 0.2, 1) 0.4s",
-              "margin-right": "25px",
-              "padding": "12px 0 !important",
-              "&:hover": {
-                "cursor": "pointer"
-              },
-              "&.active": {
-                "font-weight": "700",
-                "font-style": "normal",
-                "background-color": "transparent !important",
-                "border-bottom": "2px solid @activeTabColor",
-                "&:hover": {
-                  "background-color": "@activeTabColor"
-                }
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".align-right": {
-                "text-align": "left !important"
-              }
-            },
-            "@media (max-width: 575px)": {
-              ".buttons": {
-                "justify-content": "flex-start"
-              }
-            },
-            ".text__author": {
-              "color": "#f3f1d8"
-            },
-            ".text__hall": {
-              "color": "#ffffff"
-            },
-            ".mbr-text": {
-              "color": "#f3f1d8"
-            },
-            ".text__time": {
-              "color": "#ffffff"
-            }
-          },
-          "_customHTML": "<section class=\"tabs2\" group=\"Schedule\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mbr-tabs\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Title</header>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <header>Tabs</header>\n        <input type=\"color\" title=\"Tabs Color\" name=\"tabsColor\" value=\"#f6f6f6\">\n        <input type=\"color\" title=\"Active Tab Color\" name=\"activeTabColor\" value=\"#7af790\">\n        <select title=\"Tabs Count\" name=\"bootstrapTabs\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\" selected>5</option>\n        </select>\n        <input type=\"range\" inline title=\"Schedule Count Tab 1\" name=\"scheduleCount1\" min=\"1\" max=\"30\" step=\"1\" value=\"10\">\n        <input type=\"range\" inline title=\"Schedule Count Tab 2\" name=\"scheduleCount2\" min=\"1\" max=\"30\" step=\"1\" value=\"3\" condition=\"bootstrapTabs > 1\">\n        <input type=\"range\" inline title=\"Schedule Count Tab 3\" name=\"scheduleCount3\" min=\"1\" max=\"30\" step=\"1\" value=\"5\" condition=\"bootstrapTabs > 2\">\n        <input type=\"range\" inline title=\"Schedule Count Tab 4\" name=\"scheduleCount4\" min=\"1\" max=\"30\" step=\"1\" value=\"4\" condition=\"bootstrapTabs > 3\">\n        <input type=\"range\" inline title=\"Schedule Count Tab 5\" name=\"scheduleCount5\" min=\"1\" max=\"30\" step=\"1\" value=\"2\" condition=\"bootstrapTabs > 4\">\n        <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#f6f6f6\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/conference28-1920.jpg\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#149dcc\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row title__wrap\" mbr-if=\"showSubtitle || showTitle || showButtons\">\n            <div class=\"title__block\" mbr-class=\"{'col-sm-6' : showButtons, 'col-sm-12' : !showButtons}\">\n                <h3 class=\"mbr-section-subtitle mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">EXCURSION</h3>\n                <h2 class=\"mbr-section-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">活動</h2>\n            </div>\n                <div class=\"col-sm-6 buttons\" mbr-if=\"showButtons\">\n                    <div class=\"mbr-section-btn\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-secondary\" href=\"#\" data-app-placeholder=\"Type Text\">View All<span class=\"fa-long-arrow-right fa mbr-iconfont mbr-iconfont-btn\"></span></a></div>\n            </div>\n        </div>\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-12 plpr_0\">\n                <ul class=\"nav nav-tabs\" role=\"tablist\">\n                    <li mbr-buttons mbr-theme-style=\"display-4\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\"><a class=\"nav-link mbr-fonts-stye show active\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs2-p_tab0\" data-app-placeholder=\"Type Text\" aria-selected=\"true\">全部</a></li>\n                    <li mbr-buttons mbr-theme-style=\"display-4\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 1\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\"><a class=\"nav-link mbr-fonts-style show\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs2-p_tab1\" data-app-placeholder=\"Type Text\" aria-selected=\"false\">工作坊</a></li>\n                    <li mbr-buttons mbr-theme-style=\"display-4\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 2\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\"><a class=\"nav-link mbr-fonts-style show\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs2-p_tab2\" data-app-placeholder=\"Type Text\" aria-selected=\"false\">講談與走學</a></li>\n                    <li mbr-buttons mbr-theme-style=\"display-4\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 3\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\"><a class=\"nav-link mbr-fonts-style show\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs2-p_tab3\" data-app-placeholder=\"Type Text\" aria-selected=\"false\">創作與展演</a></li>\n                    <li mbr-buttons mbr-theme-style=\"display-4\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\"><a class=\"nav-link mbr-fonts-style show\" role=\"tab\" data-toggle=\"tab\" href=\"#tabs2-p_tab4\" data-app-placeholder=\"Type Text\" aria-selected=\"false\">延伸活動</a></li>\n                </ul>\n                <div class=\"tab-content\">\n                    <div id=\"tab1\" class=\"tab-pane in active\" role=\"tabpanel\">\n                    <div mbr-list mbr-list-grow=\"scheduleCount1\">\n                        <div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月6 (六)</b><br><b>14:00 pm – 17:00 pm </b><br> ( 3 hours)<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>家刺繡：<br>縫ㄧ幅圖景工作坊<br></b>&nbsp;01&nbsp;<b>入門篇&nbsp;</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>府城刺繡宗師<br>林玉泉/阿泉師</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b><br><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"page1.html\" data-app-placeholder=\"Type Text\">工作坊</a></div>\n                                </div>\n                            </div>\n                        <div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月7 (日)</b><br><b>14:00 pm – 17:00 pm </b><br>( 3 hours)<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>家刺繡：<br>縫ㄧ幅圖景工作坊<br></b>&nbsp;02&nbsp;<b>進步篇</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>府城刺繡宗師<br>林玉泉/阿泉師</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"page1.html\" data-app-placeholder=\"Type Text\">工作坊</a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月13 (六)</b><br><b>19:30 pm – 21:30 pm </b><br>( 2 hours)<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">01這是咱台南的模樣 <br> 「從荷治到近代的城街發展」<br>荷蘭時期大台南城的市街與模樣<br>明清時期台南城生活模樣概觀<br>赤嵌署光計畫的台南模樣的未來觀<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>黃恩宇、顏世樺、侯慶謀</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"page2.html\" data-app-placeholder=\"Type Text\">講談</a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月19 (五)</b><br><b>19:30 pm – 21:30 pm </b><br>( 2 hours)<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>02 這是咱台南的模樣</b><br>「府城文化與人事物」<br>台南現在的樣子/台南未來的樣子<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>游智維、謝仕淵、黃介二、陳百棟</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"page2.html\" data-app-placeholder=\"Type Text\">講談</a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月25 (四)</b><br><b>14:00 pm – 16:00 pm </b><br>( 2 hours)<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>家香味：是哪味？做一株家的香氣</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>吳萬春香鋪 張偉<br></b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"page3.html\" data-app-placeholder=\"Type Text\">工作坊<br></a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>8月23 (日)</b><br><b>9:00 am – 12:00 am </b><br>( 3 hours)<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>家廟儀式考_做16歲<br>家廟文化中重要的故事與儀式</b><br>你不知道的 「做16歲」<br>做十六歲與就是成年禮嗎？<br>聽說做十六歲是台南獨有？<br>做十六歲緣起台南五條港地帶是不是真的？<br>當代生活與做十六歲這項看似古典的正宗家庭宗教文化如何理解？<br>古早就這樣的事到底是怎麼一回事？<b><br></b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>施誠興、施義修、范勝雄、曾國棟</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>臺灣臨濮堂施姓大宗祠</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">講談<br></a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>8月29 (六)</b><br><b>14:00 pm – 17:00 pm </b><br>( 3 hours)<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>來揣府城家廟的記持</b><br>家廟與家的距離</p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>邱明賢</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂、鄭成功祖廟、臺灣臨濮堂施姓大宗祠、全台吳姓宗祠</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">走學</a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>9月19 (六)</b><br><b>15:00 pm – 17:00 pm </b><br>( 2 hours)<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>家廟生活考_中秋搏餅：<br>軍旅生活延伸出來的家庭遊戲</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>鄭道聰、潘鵬文</b><br><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>鄭成功祖廟</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">講談<br></a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>10月09 (六)</b><br><b>14:00 pm – 21:00 pm </b><br>( 7hours)<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>命題01＋家的氣口市集</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>閩茫工作室＋廢物不存在</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">藝術進駐與展演</a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>10月10 (日)</b><br><b>14:00 pm – 21:00 pm </b><br>( 7 hours)<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>命題02＋家的氣口市集</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>閩茫工作室＋廢物不存在</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">藝術進駐與展演<br></a></div>\n                                </div>\n                            </div></div>\n                    </div>\n                    \n                    <div id=\"tab2\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 1\">\n                    <div mbr-list mbr-list-grow=\"scheduleCount2\">\n                        <div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月6 (六)<br>14:00 pm – 17:00 pm<br>( 3 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>家刺繡：<br>縫ㄧ幅圖景工作坊<br>入門篇 01</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>府城刺繡宗師<br>林玉泉/阿泉師</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">工作坊<br></a></div>\n                                </div>\n                            </div>\n                        <div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月7 (日)<br>14:00 pm – 17:00 pm<br>( 3 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>家刺繡：<br>縫ㄧ幅圖景工作坊<br>實作篇 02</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>府城刺繡宗師<br>林玉泉/阿泉師</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">工作坊<br></a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月25 (四)<br>14:00 pm – 16:00 pm<br>( 2 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>家香味：是哪味？做一株家的香氣。</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>吳萬春香鋪 張偉</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">工作坊</a></div>\n                                </div>\n                            </div></div>\n                        </div>\n                    \n                    \n                    \n                    <div id=\"tab3\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 2\">\n                    <div mbr-list mbr-list-grow=\"scheduleCount3\">\n                        <div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月13 (六)<br>19:30 pm – 21:30 pm<br>( 2 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>01這是咱台南的模樣 <br></b>「從荷治到近代的城街發展」<br>荷蘭時期大台南城的市街與模樣<br>明清時期台南城生活模樣概觀<br>赤嵌署光計畫的台南模樣的未來觀<br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>黃恩宇、顏世樺、侯慶謀</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">講談<br></a></div>\n                                </div>\n                            </div>\n                    <div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月19 (五)<br>19:30 pm – 21:30 pm<br>( 2 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>02 這是咱台南的模樣<br>「府城文化與人事物」<br>台南現在的樣子/台南未來的樣子</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>游智維、黃介二、陳百棟</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">講談</a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>8月23 (日)<br>9:00 am – 12:00 am<br>( 3 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>家廟儀式考_做16歲<br>家廟文化中重要的故事與儀式<br>你不知道的 「做16歲」<br>做十六歲與就是成年禮嗎？<br>聽說做十六歲是台南獨有？<br>做十六歲儀典緣起台南五條港地帶是不是真的？<br>當代生活與做十六歲這項看似古典的正宗家庭宗教文化如何理解？<br>古早就這樣的事到底是怎麼一回事？</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>施誠興、施義修、范勝雄、曾國棟</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>臺灣臨濮堂施姓大宗祠</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">講談</a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>8月29 (</b>六<b>)<br>14:00 pm – 17:00 pm<br>( 3 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>來揣府城家廟的記持<br>家廟與家的距離</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>邱明賢</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂、鄭成功祖廟、臺灣臨濮堂施姓大宗祠、全台吳姓宗祠</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">走學</a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>9月19 (六)<br>15:00 pm – 17:00 pm<br>( 2 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>家廟生活考_中秋搏餅：<br>軍旅生活延伸出來的家庭遊戲</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>鄭道聰、潘鵬文</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>鄭成功祖廟</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">講談<br></a></div>\n                                </div>\n                            </div></div>\n                        </div>\n                    \n                    \n                    \n                    <div id=\"tab3\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 3\">\n                    <div mbr-list mbr-list-grow=\"scheduleCount4\">\n                        <div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>6月13日(</b>六<b>)</b><br><b>16:00 pm – 21:00 pm<br></b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>冷門餐桌</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>廢物不存在</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">藝術進駐與展演<br></a></div>\n                                </div>\n                            </div>\n                    <div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>時間日期待公布</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>寂寞共食</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>廢物不存在</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂、鄭成功祖廟</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">藝術進駐與展演</a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>10月9 (日)<br>14:00 pm – 21:00 pm<br>( 7 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>命題01＋家的氣口市集</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>閩茫工作室＋廢物不存在</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂、鄭成功祖廟</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">藝術進駐與展演</a></div>\n                                </div>\n                            </div><div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>10月10 (日)<br>14:00 pm – 21:00 pm<br>( 7 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>命題02＋家的氣口市集</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>閩茫工作室＋廢物不存在</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>陳德聚堂、鄭成功祖廟</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">藝術進駐與展演</a></div>\n                                </div>\n                            </div></div>\n                        </div>\n                    \n                    \n                    <div id=\"tab3\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 4\">\n                    <div mbr-list mbr-list-grow=\"scheduleCount5\">\n                        <div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>8月25 (二)<br>09:00 am – 11:30 am <br>( 2.5 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>2020年做16歲慶典</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>施義修、施誠興</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>臺灣臨濮堂施姓大宗祠</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">延伸活動</a></div>\n                                </div>\n                            </div>\n                    <div class=\"row wrap\">\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__time mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__time\"><b>10月1 (四)<br>09:00 am – 14:00 pm <br> ( 7 hours)</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>實境搏餅大會</b><br></p>\n                                \n                            </div>\n                            <div class=\"col-lg-3 plpr_0 align-items-stretch\">\n                                <p class=\"text__author mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__author\"><b>鄭道聰、潘鵬文</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch\">\n                                <p class=\"text__hall mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text__hall\"><b>鄭成功祖廟</b></p>\n                                \n                            </div>\n                            <div class=\"col-lg-2 plpr_0 align-items-stretch btn__table\">\n                                <div class=\"mbr-section-btn align-right\" mbr-buttons data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\" mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary-outline\" href=\"index.html#tabs2-p\" data-app-placeholder=\"Type Text\">延伸活動<br></a></div>\n                                </div>\n                            </div></div>\n                        </div>\n                    \n                </div>\n            </div>\n        </div>\n    </div>\n   \n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "tabs2-p",
-          "_isUserblock": true,
-          "_sourceTheme": "conferencem4",
-          "_cid": "rY3DnNKwbG",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -683,14 +158,31 @@
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "H1": {
+              "color": "#232323"
             }
           },
-          "_name": "header02",
-          "_customHTML": "<section class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-semibold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\"><a href=\"https://www.google.com/maps/d/edit?mid=1FZQpkRP1ex5G1ErZ-EG9TxzbD9tZhPZz&amp;ll=22.9947199533503%2C120.20078000000001&amp;z=17\" target=\"_blank\">google路徑導引</a></h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod temporeum dicant partem\n                    scripserit. Lorem ipsum dolor sit amet, consec tetur adipiscing elit adipiscing elitdo.</p>\n                <div mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">LEARN MORE</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
-          "_anchor": "header02-3b",
-          "_isUserblock": true,
+          "_name": "info01",
           "_sourceTheme": "personam4",
-          "_cid": "rZraQw1Tee",
+          "_customHTML": "<section class=\"info1 personam4_info1\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t\n\t</mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row justify-content-md-center\">\n\t\t\t<div class=\"col-md-10 align-center\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-semibold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">融合中西區臺灣歷史縮影特色，推動「青年創生微聚實驗聚所」，提供創意人才聚集之地，推廣台南文化產品，並結合活化市定古蹟陳德聚堂，凝聚青年創業培力與文化遊程量能，打造前店後村、青銀共創的南區都會創生模式。</h1>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n\t\t\t\t\tBeautiful mobile websites\n\t\t\t\t</h3>\n\t\t\t\t<p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod temporeum dicant partem\n\t\t\t\t\tscripserit. Lorem ipsum dolor sit amet, consec tetur adipiscing elit adipiscing elitdo.</p>\n\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">CONTACT US</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n</section>",
+          "_cid": "u8ZgiWTKzF",
+          "_anchor": "info01-65",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1127,13 +619,112 @@
             }
           },
           "_name": "menu01",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#ffffff\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Dropdown BG Color\" name=\"dropColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Dropdown Text Color\" name=\"dropTextColor\" value=\"#232323\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#cc2952\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"#top\">\n                        <img src=\"@PROJECT_PATH@/assets/images/%E8%B7%AF%E5%BE%91-4-212x103.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-danger\" data-app-selector=\".navbar-caption\" href=\"https://djtp-act.github.io/path2020/\" data-app-placeholder=\"Type Text\">大宮町縱走</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-danger\" href=\"page4.html#content10-2g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">關於大宮町縱走</a>\n                </li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider1-3g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">最新消息</a></li>\n                <li class=\"nav-item dropdown\"><a class=\"nav-link link dropdown-toggle text-danger\" href=\"index.html#features05-z\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">四大三頭</a><div class=\"dropdown-menu\"><a class=\"dropdown-item text-danger\" href=\"index.html#tabs2-p\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">列表</a><a class=\"dropdown-item text-danger\" href=\"index.html#features05-4i\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊</a></div></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#content05-3s\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">步道</a></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊站</a></li><li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">加入隊員</a></li><li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">物資採購</a></li>\n                \n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-danger\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                    </a>\n                </li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n\n                    Try It Now!\n                </a></div>\n        </div>\n    </nav>\n</section>",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#ffffff\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Dropdown BG Color\" name=\"dropColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Dropdown Text Color\" name=\"dropTextColor\" value=\"#232323\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#7af790\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"#top\">\n                        <img src=\"@PROJECT_PATH@/assets/images/%E8%B7%AF%E5%BE%91-4-212x103.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://djtp-act.github.io/path2020/\" data-app-placeholder=\"Type Text\">大宮町縱走</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-black\" href=\"page4.html#content10-2g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">關於大宮町縱走</a>\n                </li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider1-3g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">最新消息</a></li>\n                <li class=\"nav-item dropdown\"><a class=\"nav-link link dropdown-toggle text-black\" href=\"index.html#features05-z\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"true\">四大三頭</a><div class=\"dropdown-menu\"><a class=\"dropdown-item text-black\" href=\"index.html#tabs2-p\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">列表</a><a class=\"dropdown-item text-black\" href=\"index.html#features05-4i\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊</a></div></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#content05-3s\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">步道</a></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊站</a></li><li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">加入隊員</a></li><li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">物資採購</a></li>\n                \n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-black\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                    </a>\n                </li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n\n                    Try It Now!\n                </a></div>\n        </div>\n    </nav>\n</section>",
           "_cid": "rwtBZ2A7qZ",
           "_anchor": "menu01-7j",
           "_sourceTheme": "personam4",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "_name": "footer1",
+          "_sourceTheme": "conferencem4",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".logo__image": {
+              "width": "(@widthLogo * 1px)",
+              "object-fit": "cover"
+            },
+            ".footer__content": {
+              "margin-bottom": "30px",
+              "&:last-child": {
+                "margin-bottom": "0"
+              }
+            },
+            ".title__adress": {
+              "margin-bottom": "20px",
+              "color": "#ffffff"
+            },
+            ".privacy": {
+              "margin-bottom": "10px",
+              "@media (max-width: 767px)": {
+                "text-align": "left"
+              },
+              "text-align": "center"
+            },
+            ".divider": {
+              "background-color": "@dividerColor",
+              "opacity": ".1",
+              "margin": "90px 0 25px",
+              "height": "1px"
+            },
+            ".form-group": {
+              "margin-bottom": "0",
+              "padding-right": "0"
+            },
+            ".form-control": {
+              "height": "50px",
+              "border": "none",
+              "padding": "14px 18px",
+              "background-color": "fade(@formBgColor, 4) !important",
+              "font-size": "16px",
+              "color": "@colorForm",
+              "& when (@transparent)": {
+                "background-color": "transparent !important",
+                "border-radius": "4px",
+                "border": "1px solid @borderColor"
+              }
+            },
+            ".input-group-btn": {
+              "padding-left": "0",
+              ".btn": {
+                "height": "50px",
+                "font-weight": "600",
+                "padding": "14px 18px"
+              }
+            },
+            ".mbr-form .input-group-btn a.btn": {
+              "border-radius": "4px !important"
+            },
+            ".mbr-form .btn": {
+              "margin": "0"
+            },
+            "input::-webkit-input-placeholder": {
+              "color": "@colorForm",
+              "opacity": ".8"
+            },
+            "input::-moz-placeholder": {
+              "color": "@colorForm",
+              "opacity": ".8"
+            },
+            "@media (max-width: 991px)": {
+              ".wrap": {
+                "padding-bottom": "25px"
+              },
+              ".divider": {
+                "margin": "0 0 20px"
+              }
+            },
+            ".work__adress": {
+              "color": "#f6f6f6"
+            }
+          },
+          "_customHTML": "<section class=\"footer1\" group=\"Footer\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\" always-bottom global>\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Brand\" name=\"showBrand\">\n        <select name=\"typeMenu\" title=\"Type Menu\" condition=\"showBrand\">\n            <option value=\"1\">Logo Text</option>\n            <option value=\"2\" selected>Logo Image</option>\n        </select>\n        <input type=\"range\" inline title=\"Width Logo\" name=\"widthLogo\" min=\"20\" max=\"100\" step=\"2\" value=\"60\" condition=\"showBrand && typeMenu == 2\">\n        <input type=\"checkbox\" title=\"Hide Column\" name=\"hideColumn\">\n        <input type=\"checkbox\" title=\"Show Bottom\" name=\"showPrivacy\">\n        <input type=\"color\" title=\"Divider Color\" value=\"#888888\" name=\"dividerColor\" condition=\"showPrivacy\">\n        <header>Form</header>\n        <input type=\"checkbox\" title=\"Show Form\" name=\"showForm\" checked>\n        <input type=\"color\" title=\"Form Text Color\" value=\"#7af790\" name=\"colorForm\">\n        <input type=\"checkbox\" title=\"Transparent Form\" name=\"transparent\" checked>\n        <input type=\"color\" title=\"Form Color\" value=\"#17161a\" name=\"formBgColor\" condition=\"!transparent\">\n        <input type=\"color\" title=\"Border Color\" value=\"#ebeaed\" name=\"borderColor\" condition=\"transparent\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#191f23\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row\" mbr-class=\"{'justify-content-between' : !showBrand && !hideColumn && showForm, 'justify-content-center' : !showForm || showBrand || hideColumn}\">\n            <div class=\"col-md-6 wrap order-0\" mbr-if=\"showBrand\" mbr-class=\"{'col-lg-3' : !hideColumn, 'col-lg-2' : hideColumn}\">\n               <p class=\"brand__text mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"typeMenu == 1\" data-app-selector=\".brand__text\"><a href=\"#\" class=\"text-warning mbr-bold\">Conference</a></p>\n                 <img class=\"logo__image\" mbr-if=\"typeMenu == 2\" src=\"false\" alt=\"Mobirise\" title>\n            </div>\n            <div class=\"col-md-6 wrap\" mbr-class=\"{'col-lg-3' : showBrand, 'col-lg-4' : !showBrand}\" mbr-if=\"hideColumn\">\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\"><b>家廟計畫蹲跳的點（實驗路徑）path.2020</b></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\">獲108年文化部青年村落獎助<br>家廟實驗鏈：陳德聚堂、鄭成功祖廟、臺灣臨濮堂施姓大宗祠、全臺吳姓大宗祠</p>\n                </div>\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\">｜型態: 文化與創生地方<div>｜建檔日期: 2020.03.22</div><div>｜djt.placemaking@gmail.com</div></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\"><b>|facebook</b></p>\n                </div>\n            </div>\n            <div class=\"col-md-6 wrap\" mbr-class=\"{'col-lg-3' : showBrand, 'col-lg-4' : !showBrand, 'col-lg-6' : !showBrand && !hideColumn}\">\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-7\" data-app-selector=\".title__adress\"><b>大宮町縱走-事業串連大步走</b></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\">｜獎助單位｜文化部<br>｜執行與計畫單位｜誠美社會企業、陳德聚堂<br>｜協作單位｜</p>\n                </div>\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\"><br><div>｜聯繫｜tica@cmsetica.com</div></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\"><b><a href=\"https://www.facebook.com/cmsetica/\" class=\"text-primary\" target=\"_blank\">|facebook</a></b>|<br><br><b>2024&nbsp;</b>大宮町縱走-事業串連大步走<br>除另有註明，網站之內容皆採用創用CC<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh_TW\"> 姓名標示─相同方式分享 4.0 國際 </a>授權條款 <a href=\"page5.html#content10-33\">.</a><b><a href=\"https://www.facebook.com/chendejiutang.since1660s/\" class=\"text-primary\"><br></a></b><a href=\"https://www.facebook.com/chendejiutang.since1660s/\" class=\"text-primary\"><b><br></b></a></p>\n                </div>\n            </div>\n            <div class=\"col-md-6 wrap\" mbr-class=\"{'col-lg-6' : !showBrand && !hideColumn, 'col-lg-4' : showBrand || hideColumn}\" mbr-if=\"showForm\">\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\">想收到來自活動通知的訊息：</h4>\n                   <div mbr-form class=\"subscribe__form\">\n                <!---Formbuilder Form--->\n                <form action=\"djt.placemaking@gmail.com\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">謝謝您</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                        </div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"form-group col-md-7  col-6\" data-for=\"email\">\n                            <input type=\"email\" name=\"email\" placeholder=\"填入您的電子郵件\" data-form-field=\"Email\" mbr-theme-style=\"display-4\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-md-5 col-6 input-group-btn \" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd,-mbrBtnRemove,-mbrLink\"><a type=\"submit\" class=\"btn btn-lg btn-primary\" data-app-placeholder=\"Type Text\">ok,送出</a></div>\n                    </div>\n                </form><!---Formbuilder Form--->\n            </div>\n                </div>\n            </div> \n            \n            \n            </div>\n            <div class=\"divider\" mbr-if=\"showPrivacy\"></div>\n            <div class=\"row align-items-baseline\" mbr-if=\"showPrivacy\">\n                <div class=\"col-md-6\">\n                     <p class=\"privacy mbr-fonts-style align-left\" mbr-theme-style=\"display-4\" data-app-selector=\".privacy\">New Theme ConferenceM4 2020<br>Сontemporary ART exhibition layout.<br></p>\n                </div>\n                <div class=\"col-md-6\">\n                     <p class=\"privacy mbr-fonts-style align-right\" mbr-theme-style=\"display-4\" data-app-selector=\".privacy\">© 2020 Mobirise - All Rights Reserved</p>\n                </div>\n            </div>\n        </div>\n                \n</section>",
+          "_anchor": "footer1-67",
+          "_isUserblock": true,
+          "_cid": "u8Zj7DPe8q",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": false,
           "_params": {}
         }
       ]
@@ -1161,11 +752,11 @@
           "_customHTML": "<section class=\"image1\" group=\"Images\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Height\" name=\"paddingTop\" min=\"0\" max=\"50\" step=\"1\" value=\"45\" condition=\"fullScreen == false\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/event-1-4-2000x1290.png\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#3d626c\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n    </div>\n</section>",
           "_cid": "rYIhWMRuw9",
           "_anchor": "image01-1i",
+          "_sourceTheme": "personam4",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_sourceTheme": "personam4"
+          "_params": {}
         },
         {
           "alias": false,
@@ -1598,14 +1189,14 @@
             }
           },
           "_name": "menu01",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#ffffff\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Dropdown BG Color\" name=\"dropColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Dropdown Text Color\" name=\"dropTextColor\" value=\"#232323\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#cc2952\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"#top\">\n                        <img src=\"@PROJECT_PATH@/assets/images/%E8%B7%AF%E5%BE%91-4-212x103.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-danger\" data-app-selector=\".navbar-caption\" href=\"https://djtp-act.github.io/path2020/\" data-app-placeholder=\"Type Text\">大宮町縱走</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-danger\" href=\"page4.html#content10-2g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">關於大宮町縱走</a>\n                </li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider1-3g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">最新消息</a></li>\n                <li class=\"nav-item dropdown\"><a class=\"nav-link link dropdown-toggle text-danger\" href=\"index.html#features05-z\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">四大三頭</a><div class=\"dropdown-menu\"><a class=\"dropdown-item text-danger\" href=\"index.html#tabs2-p\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">列表</a><a class=\"dropdown-item text-danger\" href=\"index.html#features05-4i\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊</a></div></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#content05-3s\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">步道</a></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊站</a></li><li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">加入隊員</a></li><li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">物資採購</a></li>\n                \n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-danger\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                    </a>\n                </li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n\n                    Try It Now!\n                </a></div>\n        </div>\n    </nav>\n</section>",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#ffffff\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Dropdown BG Color\" name=\"dropColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Dropdown Text Color\" name=\"dropTextColor\" value=\"#232323\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#7af790\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"#top\">\n                        <img src=\"@PROJECT_PATH@/assets/images/%E8%B7%AF%E5%BE%91-4-212x103.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://djtp-act.github.io/path2020/\" data-app-placeholder=\"Type Text\">大宮町縱走</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-black\" href=\"page4.html#content10-2g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">關於大宮町縱走</a>\n                </li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider1-3g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">最新消息</a></li>\n                <li class=\"nav-item dropdown open\"><a class=\"nav-link link dropdown-toggle text-black\" href=\"index.html#features05-z\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"true\">四大三頭</a><div class=\"dropdown-menu\"><a class=\"dropdown-item text-black\" href=\"index.html#tabs2-p\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">列表</a><a class=\"dropdown-item text-black\" href=\"index.html#features05-4i\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊</a></div></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#content05-3s\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">步道</a></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊站</a></li><li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">加入隊員</a></li><li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">物資採購</a></li>\n                \n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-black\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                    </a>\n                </li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n\n                    Try It Now!\n                </a></div>\n        </div>\n    </nav>\n</section>",
           "_cid": "rYIhWNFzzA",
           "_anchor": "menu01-1k",
+          "_sourceTheme": "personam4",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_sourceTheme": "personam4"
+          "_params": {}
         },
         {
           "_name": "content1",
@@ -1727,11 +1318,11 @@
           "_customHTML": "<section class=\"content9\" group=\"Content\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#fff3f3\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container-fluid\">\n        <div class=\"row\">\n\n            <div class=\"col-lg-6\">\n                <div class=\"card-img\">\n                    <img src=\"@PROJECT_PATH@/assets/images/event-1-4-1786x1152.png\" alt=\"Mobirise\" title>\n                </div>\n            </div>\n\n\n            <div class=\"col-lg-6 py-4 m-auto\">\n                <div class=\"text-wrap\">\n                    <h4 class=\"card-title align-left mbr-semibold pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"></h4>\n\n                    <p class=\"mbr-text pb-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .sig-img\">從荷治開始，逐步訴說城街的發展，進而談論台南現在及未來的樣貌。兩回合的講談，邀請研究者、觀察者一同分享、討論，試圖構築不同台南的生活觀點。<br><br><br><br><br>&nbsp;6/13講題<br>• 「從荷治到近代的城街發展」<br>• 荷蘭時代大台南城的模樣:荷蘭時期的台南市街<br>• 明清時期台南城生活模樣概觀<br>• 赤嵌署光計畫的台南模樣的未來觀<br><br><br>6/19講題<br>• 「府城文化與人事物」<br>• 台南現在的樣子 / 台南未來的樣子<br><br><br><br></p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"https://mobirise.co\" class=\"btn btn-primary-outline\" data-app-placeholder=\"Type Text\">\n                            VIEW CASE</a></div>\n\n                </div>\n\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rYIhWOSuuJ",
           "_anchor": "content09-1n",
+          "_sourceTheme": "personam4",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_sourceTheme": "personam4"
+          "_params": {}
         },
         {
           "alias": false,
@@ -1939,6 +1530,105 @@
           "_name": "wowslider",
           "_anchor": "wowslider-4a",
           "_sourceTheme": "personam4"
+        },
+        {
+          "_name": "footer1",
+          "_sourceTheme": "conferencem4",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".logo__image": {
+              "width": "(@widthLogo * 1px)",
+              "object-fit": "cover"
+            },
+            ".footer__content": {
+              "margin-bottom": "30px",
+              "&:last-child": {
+                "margin-bottom": "0"
+              }
+            },
+            ".title__adress": {
+              "margin-bottom": "20px",
+              "color": "#ffffff"
+            },
+            ".privacy": {
+              "margin-bottom": "10px",
+              "@media (max-width: 767px)": {
+                "text-align": "left"
+              },
+              "text-align": "center"
+            },
+            ".divider": {
+              "background-color": "@dividerColor",
+              "opacity": ".1",
+              "margin": "90px 0 25px",
+              "height": "1px"
+            },
+            ".form-group": {
+              "margin-bottom": "0",
+              "padding-right": "0"
+            },
+            ".form-control": {
+              "height": "50px",
+              "border": "none",
+              "padding": "14px 18px",
+              "background-color": "fade(@formBgColor, 4) !important",
+              "font-size": "16px",
+              "color": "@colorForm",
+              "& when (@transparent)": {
+                "background-color": "transparent !important",
+                "border-radius": "4px",
+                "border": "1px solid @borderColor"
+              }
+            },
+            ".input-group-btn": {
+              "padding-left": "0",
+              ".btn": {
+                "height": "50px",
+                "font-weight": "600",
+                "padding": "14px 18px"
+              }
+            },
+            ".mbr-form .input-group-btn a.btn": {
+              "border-radius": "4px !important"
+            },
+            ".mbr-form .btn": {
+              "margin": "0"
+            },
+            "input::-webkit-input-placeholder": {
+              "color": "@colorForm",
+              "opacity": ".8"
+            },
+            "input::-moz-placeholder": {
+              "color": "@colorForm",
+              "opacity": ".8"
+            },
+            "@media (max-width: 991px)": {
+              ".wrap": {
+                "padding-bottom": "25px"
+              },
+              ".divider": {
+                "margin": "0 0 20px"
+              }
+            },
+            ".work__adress": {
+              "color": "#f6f6f6"
+            }
+          },
+          "_customHTML": "<section class=\"footer1\" group=\"Footer\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\" always-bottom global>\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Brand\" name=\"showBrand\">\n        <select name=\"typeMenu\" title=\"Type Menu\" condition=\"showBrand\">\n            <option value=\"1\">Logo Text</option>\n            <option value=\"2\" selected>Logo Image</option>\n        </select>\n        <input type=\"range\" inline title=\"Width Logo\" name=\"widthLogo\" min=\"20\" max=\"100\" step=\"2\" value=\"60\" condition=\"showBrand && typeMenu == 2\">\n        <input type=\"checkbox\" title=\"Hide Column\" name=\"hideColumn\">\n        <input type=\"checkbox\" title=\"Show Bottom\" name=\"showPrivacy\">\n        <input type=\"color\" title=\"Divider Color\" value=\"#888888\" name=\"dividerColor\" condition=\"showPrivacy\">\n        <header>Form</header>\n        <input type=\"checkbox\" title=\"Show Form\" name=\"showForm\" checked>\n        <input type=\"color\" title=\"Form Text Color\" value=\"#7af790\" name=\"colorForm\">\n        <input type=\"checkbox\" title=\"Transparent Form\" name=\"transparent\" checked>\n        <input type=\"color\" title=\"Form Color\" value=\"#17161a\" name=\"formBgColor\" condition=\"!transparent\">\n        <input type=\"color\" title=\"Border Color\" value=\"#ebeaed\" name=\"borderColor\" condition=\"transparent\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#191f23\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row\" mbr-class=\"{'justify-content-between' : !showBrand && !hideColumn && showForm, 'justify-content-center' : !showForm || showBrand || hideColumn}\">\n            <div class=\"col-md-6 wrap order-0\" mbr-if=\"showBrand\" mbr-class=\"{'col-lg-3' : !hideColumn, 'col-lg-2' : hideColumn}\">\n               <p class=\"brand__text mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"typeMenu == 1\" data-app-selector=\".brand__text\"><a href=\"#\" class=\"text-warning mbr-bold\">Conference</a></p>\n                 <img class=\"logo__image\" mbr-if=\"typeMenu == 2\" src=\"false\" alt=\"Mobirise\" title>\n            </div>\n            <div class=\"col-md-6 wrap\" mbr-class=\"{'col-lg-3' : showBrand, 'col-lg-4' : !showBrand}\" mbr-if=\"hideColumn\">\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\"><b>家廟計畫蹲跳的點（實驗路徑）path.2020</b></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\">獲108年文化部青年村落獎助<br>家廟實驗鏈：陳德聚堂、鄭成功祖廟、臺灣臨濮堂施姓大宗祠、全臺吳姓大宗祠</p>\n                </div>\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\">｜型態: 文化與創生地方<div>｜建檔日期: 2020.03.22</div><div>｜djt.placemaking@gmail.com</div></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\"><b>|facebook</b></p>\n                </div>\n            </div>\n            <div class=\"col-md-6 wrap\" mbr-class=\"{'col-lg-3' : showBrand, 'col-lg-4' : !showBrand, 'col-lg-6' : !showBrand && !hideColumn}\">\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-7\" data-app-selector=\".title__adress\"><b>大宮町縱走-事業串連大步走</b></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\">｜獎助單位｜文化部<br>｜執行與計畫單位｜誠美社會企業、陳德聚堂<br>｜協作單位｜</p>\n                </div>\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\"><br><div>｜聯繫｜tica@cmsetica.com</div></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\"><b><a href=\"https://www.facebook.com/cmsetica/\" class=\"text-primary\" target=\"_blank\">|facebook</a></b>|<br><br><b>2024&nbsp;</b>大宮町縱走-事業串連大步走<br>除另有註明，網站之內容皆採用創用CC<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh_TW\"> 姓名標示─相同方式分享 4.0 國際 </a>授權條款 <a href=\"page5.html#content10-33\">.</a><b><a href=\"https://www.facebook.com/chendejiutang.since1660s/\" class=\"text-primary\"><br></a></b><a href=\"https://www.facebook.com/chendejiutang.since1660s/\" class=\"text-primary\"><b><br></b></a></p>\n                </div>\n            </div>\n            <div class=\"col-md-6 wrap\" mbr-class=\"{'col-lg-6' : !showBrand && !hideColumn, 'col-lg-4' : showBrand || hideColumn}\" mbr-if=\"showForm\">\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\">想收到來自活動通知的訊息：</h4>\n                   <div mbr-form class=\"subscribe__form\">\n                <!---Formbuilder Form--->\n                <form action=\"djt.placemaking@gmail.com\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">謝謝您</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                        </div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"form-group col-md-7  col-6\" data-for=\"email\">\n                            <input type=\"email\" name=\"email\" placeholder=\"填入您的電子郵件\" data-form-field=\"Email\" mbr-theme-style=\"display-4\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-md-5 col-6 input-group-btn \" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd,-mbrBtnRemove,-mbrLink\"><a type=\"submit\" class=\"btn btn-lg btn-primary\" data-app-placeholder=\"Type Text\">ok,送出</a></div>\n                    </div>\n                </form><!---Formbuilder Form--->\n            </div>\n                </div>\n            </div> \n            \n            \n            </div>\n            <div class=\"divider\" mbr-if=\"showPrivacy\"></div>\n            <div class=\"row align-items-baseline\" mbr-if=\"showPrivacy\">\n                <div class=\"col-md-6\">\n                     <p class=\"privacy mbr-fonts-style align-left\" mbr-theme-style=\"display-4\" data-app-selector=\".privacy\">New Theme ConferenceM4 2020<br>Сontemporary ART exhibition layout.<br></p>\n                </div>\n                <div class=\"col-md-6\">\n                     <p class=\"privacy mbr-fonts-style align-right\" mbr-theme-style=\"display-4\" data-app-selector=\".privacy\">© 2020 Mobirise - All Rights Reserved</p>\n                </div>\n            </div>\n        </div>\n                \n</section>",
+          "_anchor": "footer1-67",
+          "_isUserblock": true,
+          "_cid": "u8Zj7DPe8q",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": false,
+          "_params": {}
         }
       ]
     },
@@ -1965,11 +1655,11 @@
           "_customHTML": "<section class=\"image1\" group=\"Images\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Height\" name=\"paddingTop\" min=\"0\" max=\"50\" step=\"1\" value=\"45\" condition=\"fullScreen == false\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/89829-ok-1-1896x1109.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#3d626c\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n    </div>\n</section>",
           "_cid": "s5AlDhJ44q",
           "_anchor": "image01-51",
+          "_sourceTheme": "personam4",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_sourceTheme": "personam4"
+          "_params": {}
         },
         {
           "alias": false,
@@ -2402,14 +2092,14 @@
             }
           },
           "_name": "menu01",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#ffffff\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Dropdown BG Color\" name=\"dropColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Dropdown Text Color\" name=\"dropTextColor\" value=\"#232323\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#cc2952\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"#top\">\n                        <img src=\"@PROJECT_PATH@/assets/images/%E8%B7%AF%E5%BE%91-4-212x103.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-danger\" data-app-selector=\".navbar-caption\" href=\"https://djtp-act.github.io/path2020/\" data-app-placeholder=\"Type Text\">大宮町縱走</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-danger\" href=\"page4.html#content10-2g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">關於大宮町縱走</a>\n                </li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider1-3g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">最新消息</a></li>\n                <li class=\"nav-item dropdown\"><a class=\"nav-link link dropdown-toggle text-danger\" href=\"index.html#features05-z\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">四大三頭</a><div class=\"dropdown-menu\"><a class=\"dropdown-item text-danger\" href=\"index.html#tabs2-p\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">列表</a><a class=\"dropdown-item text-danger\" href=\"index.html#features05-4i\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊</a></div></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#content05-3s\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">步道</a></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊站</a></li><li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">加入隊員</a></li><li class=\"nav-item\"><a class=\"nav-link link text-danger\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">物資採購</a></li>\n                \n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-danger\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                    </a>\n                </li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n\n                    Try It Now!\n                </a></div>\n        </div>\n    </nav>\n</section>",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#ffffff\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Dropdown BG Color\" name=\"dropColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Dropdown Text Color\" name=\"dropTextColor\" value=\"#232323\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#7af790\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"#top\">\n                        <img src=\"@PROJECT_PATH@/assets/images/%E8%B7%AF%E5%BE%91-4-212x103.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://djtp-act.github.io/path2020/\" data-app-placeholder=\"Type Text\">大宮町縱走</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-black\" href=\"page4.html#content10-2g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">關於大宮町縱走</a>\n                </li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider1-3g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">最新消息</a></li>\n                <li class=\"nav-item dropdown open\"><a class=\"nav-link link dropdown-toggle text-black\" href=\"index.html#features05-z\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"true\">四大三頭</a><div class=\"dropdown-menu\"><a class=\"dropdown-item text-black\" href=\"index.html#tabs2-p\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">列表</a><a class=\"dropdown-item text-black\" href=\"index.html#features05-4i\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊</a></div></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#content05-3s\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">步道</a></li>\n                <li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">資訊站</a></li><li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">加入隊員</a></li><li class=\"nav-item\"><a class=\"nav-link link text-black\" href=\"index.html#slider3-3v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">物資採購</a></li>\n                \n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-black\" href=\"https://mobirise.co\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                    </a>\n                </li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n\n                    Try It Now!\n                </a></div>\n        </div>\n    </nav>\n</section>",
           "_cid": "s5AlDllwrB",
           "_anchor": "menu01-53",
+          "_sourceTheme": "personam4",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_sourceTheme": "personam4"
+          "_params": {}
         },
         {
           "_name": "content1",
@@ -2531,11 +2221,11 @@
           "_customHTML": "<section class=\"content9\" group=\"Content\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#fff3f3\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container-fluid\">\n        <div class=\"row\">\n\n            <div class=\"col-lg-6\">\n                <div class=\"card-img\">\n                    <img src=\"@PROJECT_PATH@/assets/images/2020-07-24-2.23.16-556x657.png\" alt=\"Mobirise\" title>\n                </div>\n            </div>\n\n\n            <div class=\"col-lg-6 py-4 m-auto\">\n                <div class=\"text-wrap\">\n                    <h4 class=\"card-title align-left mbr-semibold pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"></h4>\n\n                    <p class=\"mbr-text pb-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .sig-img\"><br>「走學」，意味邊走邊學「路上觀察」。行走於台南大街小巷之中的我們，如同沈浸在歷史的潮流。府城的歷史大家都知道一點一些，但在府城中，家廟的歷史卻很少被提及。對很多人而言，家廟是屬於私人領域的空間，但真的是如此嗎？藉由這次的走讀活動，我們邀請了邱明賢老師來帶大家走進這較為陌生的領域。或許在這次的走學過程中，關於家廟這一領域，能帶給大家不一樣的想像，家廟也許不是那樣的陌生，而是另一條回家的路徑。<br><br><br><br><br>集合地點：<br>陳德聚堂（ 700台南市中西區永福路二段152巷20號）<br><br>費用 ：200元<br>(含當日活動保險、導覽解說、導覽手冊、礦泉水)。<br>*報名成功後，等候通知繳費方法，再行繳費。<br><br><br><br></p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"https://mobirise.co\" class=\"btn btn-primary-outline\" data-app-placeholder=\"Type Text\">\n                            VIEW CASE</a></div>\n\n                </div>\n\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "s5AlDntBqb",
           "_anchor": "content09-56",
+          "_sourceTheme": "personam4",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_sourceTheme": "personam4"
+          "_params": {}
         },
         {
           "alias": false,
@@ -2807,6 +2497,105 @@
           "_name": "wowslider",
           "_anchor": "wowslider-60",
           "_sourceTheme": "personam4"
+        },
+        {
+          "_name": "footer1",
+          "_sourceTheme": "conferencem4",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".logo__image": {
+              "width": "(@widthLogo * 1px)",
+              "object-fit": "cover"
+            },
+            ".footer__content": {
+              "margin-bottom": "30px",
+              "&:last-child": {
+                "margin-bottom": "0"
+              }
+            },
+            ".title__adress": {
+              "margin-bottom": "20px",
+              "color": "#ffffff"
+            },
+            ".privacy": {
+              "margin-bottom": "10px",
+              "@media (max-width: 767px)": {
+                "text-align": "left"
+              },
+              "text-align": "center"
+            },
+            ".divider": {
+              "background-color": "@dividerColor",
+              "opacity": ".1",
+              "margin": "90px 0 25px",
+              "height": "1px"
+            },
+            ".form-group": {
+              "margin-bottom": "0",
+              "padding-right": "0"
+            },
+            ".form-control": {
+              "height": "50px",
+              "border": "none",
+              "padding": "14px 18px",
+              "background-color": "fade(@formBgColor, 4) !important",
+              "font-size": "16px",
+              "color": "@colorForm",
+              "& when (@transparent)": {
+                "background-color": "transparent !important",
+                "border-radius": "4px",
+                "border": "1px solid @borderColor"
+              }
+            },
+            ".input-group-btn": {
+              "padding-left": "0",
+              ".btn": {
+                "height": "50px",
+                "font-weight": "600",
+                "padding": "14px 18px"
+              }
+            },
+            ".mbr-form .input-group-btn a.btn": {
+              "border-radius": "4px !important"
+            },
+            ".mbr-form .btn": {
+              "margin": "0"
+            },
+            "input::-webkit-input-placeholder": {
+              "color": "@colorForm",
+              "opacity": ".8"
+            },
+            "input::-moz-placeholder": {
+              "color": "@colorForm",
+              "opacity": ".8"
+            },
+            "@media (max-width: 991px)": {
+              ".wrap": {
+                "padding-bottom": "25px"
+              },
+              ".divider": {
+                "margin": "0 0 20px"
+              }
+            },
+            ".work__adress": {
+              "color": "#f6f6f6"
+            }
+          },
+          "_customHTML": "<section class=\"footer1\" group=\"Footer\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\" always-bottom global>\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Brand\" name=\"showBrand\">\n        <select name=\"typeMenu\" title=\"Type Menu\" condition=\"showBrand\">\n            <option value=\"1\">Logo Text</option>\n            <option value=\"2\" selected>Logo Image</option>\n        </select>\n        <input type=\"range\" inline title=\"Width Logo\" name=\"widthLogo\" min=\"20\" max=\"100\" step=\"2\" value=\"60\" condition=\"showBrand && typeMenu == 2\">\n        <input type=\"checkbox\" title=\"Hide Column\" name=\"hideColumn\">\n        <input type=\"checkbox\" title=\"Show Bottom\" name=\"showPrivacy\">\n        <input type=\"color\" title=\"Divider Color\" value=\"#888888\" name=\"dividerColor\" condition=\"showPrivacy\">\n        <header>Form</header>\n        <input type=\"checkbox\" title=\"Show Form\" name=\"showForm\" checked>\n        <input type=\"color\" title=\"Form Text Color\" value=\"#7af790\" name=\"colorForm\">\n        <input type=\"checkbox\" title=\"Transparent Form\" name=\"transparent\" checked>\n        <input type=\"color\" title=\"Form Color\" value=\"#17161a\" name=\"formBgColor\" condition=\"!transparent\">\n        <input type=\"color\" title=\"Border Color\" value=\"#ebeaed\" name=\"borderColor\" condition=\"transparent\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#191f23\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row\" mbr-class=\"{'justify-content-between' : !showBrand && !hideColumn && showForm, 'justify-content-center' : !showForm || showBrand || hideColumn}\">\n            <div class=\"col-md-6 wrap order-0\" mbr-if=\"showBrand\" mbr-class=\"{'col-lg-3' : !hideColumn, 'col-lg-2' : hideColumn}\">\n               <p class=\"brand__text mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"typeMenu == 1\" data-app-selector=\".brand__text\"><a href=\"#\" class=\"text-warning mbr-bold\">Conference</a></p>\n                 <img class=\"logo__image\" mbr-if=\"typeMenu == 2\" src=\"false\" alt=\"Mobirise\" title>\n            </div>\n            <div class=\"col-md-6 wrap\" mbr-class=\"{'col-lg-3' : showBrand, 'col-lg-4' : !showBrand}\" mbr-if=\"hideColumn\">\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\"><b>家廟計畫蹲跳的點（實驗路徑）path.2020</b></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\">獲108年文化部青年村落獎助<br>家廟實驗鏈：陳德聚堂、鄭成功祖廟、臺灣臨濮堂施姓大宗祠、全臺吳姓大宗祠</p>\n                </div>\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\">｜型態: 文化與創生地方<div>｜建檔日期: 2020.03.22</div><div>｜djt.placemaking@gmail.com</div></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\"><b>|facebook</b></p>\n                </div>\n            </div>\n            <div class=\"col-md-6 wrap\" mbr-class=\"{'col-lg-3' : showBrand, 'col-lg-4' : !showBrand, 'col-lg-6' : !showBrand && !hideColumn}\">\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-7\" data-app-selector=\".title__adress\"><b>大宮町縱走-事業串連大步走</b></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\">｜獎助單位｜文化部<br>｜執行與計畫單位｜誠美社會企業、陳德聚堂<br>｜協作單位｜</p>\n                </div>\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\"><br><div>｜聯繫｜tica@cmsetica.com</div></h4>\n                    <p class=\"work__adress mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".work__adress\"><b><a href=\"https://www.facebook.com/cmsetica/\" class=\"text-primary\" target=\"_blank\">|facebook</a></b>|<br><br><b>2024&nbsp;</b>大宮町縱走-事業串連大步走<br>除另有註明，網站之內容皆採用創用CC<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh_TW\"> 姓名標示─相同方式分享 4.0 國際 </a>授權條款 <a href=\"page5.html#content10-33\">.</a><b><a href=\"https://www.facebook.com/chendejiutang.since1660s/\" class=\"text-primary\"><br></a></b><a href=\"https://www.facebook.com/chendejiutang.since1660s/\" class=\"text-primary\"><b><br></b></a></p>\n                </div>\n            </div>\n            <div class=\"col-md-6 wrap\" mbr-class=\"{'col-lg-6' : !showBrand && !hideColumn, 'col-lg-4' : showBrand || hideColumn}\" mbr-if=\"showForm\">\n                <div class=\"footer__content\">\n                    <h4 class=\"mbr-fonts-style mbr-semibold title__adress\" mbr-theme-style=\"display-4\" data-app-selector=\".title__adress\">想收到來自活動通知的訊息：</h4>\n                   <div mbr-form class=\"subscribe__form\">\n                <!---Formbuilder Form--->\n                <form action=\"djt.placemaking@gmail.com\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">謝謝您</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                        </div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"form-group col-md-7  col-6\" data-for=\"email\">\n                            <input type=\"email\" name=\"email\" placeholder=\"填入您的電子郵件\" data-form-field=\"Email\" mbr-theme-style=\"display-4\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-md-5 col-6 input-group-btn \" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd,-mbrBtnRemove,-mbrLink\"><a type=\"submit\" class=\"btn btn-lg btn-primary\" data-app-placeholder=\"Type Text\">ok,送出</a></div>\n                    </div>\n                </form><!---Formbuilder Form--->\n            </div>\n                </div>\n            </div> \n            \n            \n            </div>\n            <div class=\"divider\" mbr-if=\"showPrivacy\"></div>\n            <div class=\"row align-items-baseline\" mbr-if=\"showPrivacy\">\n                <div class=\"col-md-6\">\n                     <p class=\"privacy mbr-fonts-style align-left\" mbr-theme-style=\"display-4\" data-app-selector=\".privacy\">New Theme ConferenceM4 2020<br>Сontemporary ART exhibition layout.<br></p>\n                </div>\n                <div class=\"col-md-6\">\n                     <p class=\"privacy mbr-fonts-style align-right\" mbr-theme-style=\"display-4\" data-app-selector=\".privacy\">© 2020 Mobirise - All Rights Reserved</p>\n                </div>\n            </div>\n        </div>\n                \n</section>",
+          "_anchor": "footer1-67",
+          "_isUserblock": true,
+          "_cid": "u8Zj7DPe8q",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": false,
+          "_params": {}
         }
       ]
     }
