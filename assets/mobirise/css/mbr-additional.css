@@ -1016,7 +1016,7 @@ section.lazy-placeholder:after {
   padding-bottom: 0;
 }
 .cid-rwtBZ2A7qZ .dropdown .dropdown-menu {
-  background: #191f23;
+  background: #ffffff;
   display: none;
   position: absolute;
   min-width: 5rem;
@@ -1030,7 +1030,7 @@ section.lazy-placeholder:after {
   color: #232323 !important;
   padding: 0 .6rem!important;
   border-radius: 0;
-  background: #191f23;
+  background: #ffffff;
 }
 .cid-rwtBZ2A7qZ .dropdown .dropdown-menu .dropdown-item::after {
   right: 0.5rem;
@@ -1671,7 +1671,7 @@ section.lazy-placeholder:after {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #ffffff;
+  background-color: #191f23;
 }
 .cid-rwtBZ2A7qZ button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -2359,7 +2359,7 @@ section.lazy-placeholder:after {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #ffffff;
+  background-color: #191f23;
 }
 .cid-rwtBZ2A7qZ button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
