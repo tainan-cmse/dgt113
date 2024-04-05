@@ -2171,6 +2171,23 @@ section.lazy-placeholder:after {
 .cid-u94nMPRrnV .item-subtitle {
   text-align: left;
 }
+.cid-u94soJcaNh {
+  padding-top: 0px;
+  padding-bottom: 60px;
+  background-color: #fdfdf4;
+}
+.cid-u94soJcaNh .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u94soJcaNh .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
 .cid-rwtBZ2A7qZ .navbar {
   padding: .5rem 0;
   background: #7af790;
