@@ -83,7 +83,7 @@
     "uniqCompNum": 249,
     "versionPublish": "5.8.0",
     "screenshot": "screenshot.png",
-    "publishChangesOnly": true,
+    "publishChangesOnly": false,
     "chatbutton": {},
     "mbrsiteDomain": "oeom9arnsv",
     "usedWebp": false,
