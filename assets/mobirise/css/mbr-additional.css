@@ -1871,16 +1871,13 @@ section.lazy-placeholder:after {
   text-align: center;
 }
 .cid-u94BbpThca {
-  padding-top: 6rem;
+  padding-top: 0rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
 }
 .cid-u94BbpThca img,
 .cid-u94BbpThca .item-img {
   width: 100%;
-  height: 100%;
-  height: 400px;
-  object-fit: cover;
 }
 .cid-u94BbpThca .item:focus,
 .cid-u94BbpThca span:focus {
