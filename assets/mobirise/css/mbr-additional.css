@@ -1913,23 +1913,6 @@ section.lazy-placeholder:after {
   color: #ffffff !important;
   border-bottom: 1px solid currentColor;
 }
-.cid-u94qSugy0E {
-  padding-top: 0px;
-  padding-bottom: 60px;
-  background-color: #fdfdf4;
-}
-.cid-u94qSugy0E .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-u94qSugy0E .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
 .cid-u8Zj7DPe8q {
   padding-top: 3rem;
   padding-bottom: 1rem;
@@ -2663,6 +2646,122 @@ section.lazy-placeholder:after {
 .cid-rwtBZ2A7qZ .dropdown-item:hover {
   color: #ffffff !important;
   border-bottom: 1px solid currentColor;
+}
+.cid-u9qCQ5akMs {
+  padding-top: 0rem;
+  padding-bottom: 4rem;
+  background-image: url("");
+}
+@media (max-width: 991px) {
+  .cid-u9qCQ5akMs .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-u9qCQ5akMs .row {
+  flex-direction: row-reverse;
+}
+.cid-u9qCQ5akMs img {
+  width: 100%;
+}
+.cid-u9qCQ5akMs .mbr-description {
+  color: #191f23;
+  text-align: center;
+}
+.cid-u9qECeXIEn {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-image: url("");
+}
+@media (max-width: 991px) {
+  .cid-u9qECeXIEn .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-u9qECeXIEn .row {
+  flex-direction: row-reverse;
+}
+.cid-u9qECeXIEn img {
+  width: 100%;
+}
+.cid-u9qECeXIEn .mbr-description {
+  color: #191f23;
+  text-align: center;
+}
+.cid-u9qKleicXH {
+  padding-top: 45px;
+  padding-bottom: 0px;
+  background-color: #faf8f3;
+}
+.cid-u9qKleicXH .card-box {
+  padding: 0rem;
+}
+.cid-u9qKleicXH .mbr-section-btn {
+  margin-top: 1.8rem;
+}
+.cid-u9qKleicXH h4 {
+  margin-bottom: 0;
+  padding-top: 2rem;
+}
+.cid-u9qKleicXH p {
+  margin-bottom: 0;
+  padding-top: 1.2rem;
+}
+.cid-u9qKleicXH .card-wrapper {
+  height: 100%;
+  padding-bottom: 1rem;
+}
+.cid-u9qKleicXH .mbr-text {
+  color: #879a9f;
+}
+.cid-u9qKleicXH .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u9qKleicXH .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u9qKTKzNjQ {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #faf8f3;
+}
+.cid-u9qKTKzNjQ .card-box {
+  padding: 0rem;
+}
+.cid-u9qKTKzNjQ .mbr-section-btn {
+  margin-top: 1.8rem;
+}
+.cid-u9qKTKzNjQ h4 {
+  margin-bottom: 0;
+  padding-top: 2rem;
+}
+.cid-u9qKTKzNjQ p {
+  margin-bottom: 0;
+  padding-top: 1.2rem;
+}
+.cid-u9qKTKzNjQ .card-wrapper {
+  height: 100%;
+  padding-bottom: 1rem;
+}
+.cid-u9qKTKzNjQ .mbr-text {
+  color: #879a9f;
+}
+.cid-u9qKTKzNjQ .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u9qKTKzNjQ .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 .cid-u8Zj7DPe8q {
   padding-top: 3rem;
