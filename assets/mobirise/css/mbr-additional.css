@@ -1996,7 +1996,7 @@ section.lazy-placeholder:after {
   color: #f6f6f6;
 }
 .cid-u94etAbN1h {
-  padding-top: 0rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
   background-image: url("");
 }
@@ -2588,7 +2588,7 @@ section.lazy-placeholder:after {
   border-bottom: 1px solid currentColor;
 }
 .cid-u9qCQ5akMs {
-  padding-top: 0rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
   background-image: url("");
 }
@@ -3840,6 +3840,8 @@ section.lazy-placeholder:after {
   border-bottom: 1px solid currentColor;
 }
 .cid-u9t1WbBWAh {
+  padding-top: 4rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 @media (max-width: 991px) {
@@ -3854,7 +3856,7 @@ section.lazy-placeholder:after {
   width: 100%;
 }
 .cid-u9t0QfVqT6 {
-  padding-top: 6rem;
+  padding-top: 0rem;
   padding-bottom: 6rem;
   background-color: #ffffff;
 }
